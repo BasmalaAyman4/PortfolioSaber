@@ -40,17 +40,17 @@ const Routespage = () => {
 
     return (
         <div className={currentLanguageCode === 'ar' ? 'arabic' : 'english'} dir={currentLanguageCode === 'ar' ? 'rtl' : 'ltr'}>
-            {
+       {/*      {
                 iLoading ?
                     <Loading iLoading={iLoading} location={location}/>
                     :
-                    <>
+                    <> */}
                     <Nav/>
                         <Routes>
                             <Route path="/" element={<Home />} />
                         </Routes>
-                    </>
-            }
+            {/*         </>
+            } */}
         </div>
     );
 };

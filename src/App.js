@@ -26,19 +26,19 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [currentLanguageCode]);
 
   useEffect(() => {
     setIsLoading(true); // Start loading when the location changes
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Adjust the duration as needed
+    }, 1000); // Adjust the duration as needed
 
     return () => clearTimeout(timer);
-  }, [location]);
+  }, [location, currentLanguageCode]);
   return (
     <>
 

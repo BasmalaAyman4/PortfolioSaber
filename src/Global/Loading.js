@@ -1,12 +1,16 @@
 import React from 'react'
 import { useContext, useEffect, useState } from 'react';
 import styles from '../Styles/loading.module.css'
+import cookies from 'js-cookie'
+
 const Loading = ({ iLoading, location }) => {
+        const currentLanguageCode = cookies.get('i18next') || 'ar'
+    
     const [IsLoading, setIsLoading] = useState(true)
     useEffect(() => {
         setIsLoading(false)
 
-    }, []) 
+    }, [currentLanguageCode]) 
 
 
   return (

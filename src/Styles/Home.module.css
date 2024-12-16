@@ -185,3 +185,53 @@ max-width: 100%;
         top: 260px;
     }
 }
+@media (min-width:0px) and (max-width:600px) {
+    .first__sec{
+        padding: 0px;
+    }
+    .first__sec__row{
+        display: flex;
+        flex-direction: column;
+    }
+    .title__body{
+        margin-top: 30px;
+        width: 100%;
+        font-size: 40px;
+                padding: 0 10px;
+    }
+    .title{
+        font-size: 37px;
+    }
+    .title__color{
+        font-size: 42px;
+    }
+    .title__line{
+        left: 50px;
+    }
+    .para__line{
+        margin-top: 100px;
+        width: 100%;
+        font-size: 17px;
+    }
+    .user{
+        width: 230px;
+        left: 80px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        top: 30px;
+}
+.gmail,
+.call,
+.linkedin,
+.git,
+.benhance,
+.youtube{
+    width: 25px;
+}
+.git{
+    right: 30px;
+}
+}
