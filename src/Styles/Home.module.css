@@ -1,0 +1,187 @@
+.first__sec{
+padding-left: 150px;
+padding-right:150px;
+width: 100% !important;
+}
+.first__sec__row{
+    width: 100% !important;
+}
+.title__body{
+        /* color: #fff; */
+            /* white-space: normal; */
+            -webkit-text-fill-color: transparent;
+            background-color: #0000;
+            background-image: linear-gradient(#fff, #fff);
+            -webkit-background-clip: text;
+            background-clip: text;
+            margin-bottom: 53px;
+            font-family: Aclonica, sans-serif;
+            font-size: 60px;
+            font-weight: 400;
+        margin-top: 170px;
+}
+.title__color{
+    webkit-text-fill-color: transparent;
+        background-image: linear-gradient(268deg, #dec7ff, #5c27fe);
+        -webkit-background-clip: text;
+        background-clip: text;
+        font-size: 65px;
+        position: relative;
+        font-weight: bold;
+}
+.title{
+    font-size: 50px;
+}
+.title__line{
+    text-align: right;
+    position: absolute;
+    left: 250px;
+    top: 60px;
+}
+.para__line{
+    font-size: 20px;
+    color: #fff;
+    margin-top: 70px;
+}
+.user,
+.back{
+max-width: 100%;
+    height: auto;
+}
+.user__body{
+    position: relative;
+}
+.user{
+    position: absolute;
+    width: 480px;
+    top: 80px;
+    left: 205px;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+.gmail,
+.call,
+.linkedin,
+.git,
+.benhance,
+.youtube{
+    position: absolute;
+    width: 55px;
+    cursor: pointer;
+   
+}
+.gmail{
+    top: 100px;
+    left: 20px;
+    animation: mymovegmail 5s infinite;
+    -webkit-animation: mymovegmail 5s infinite;
+}
+.call{
+    top: 260px;
+    animation: mymovecall 5s infinite;
+    -webkit-animation: mymovecall 5s infinite;
+    right: 0px;
+}
+.linkedin{
+    top: 320px;
+    left: 30px;
+    animation: mymovelinkedin 5s infinite;
+    -webkit-animation: mymovelinkedin 5s infinite;
+}
+.youtube{
+    right: 20px;
+    top: 80px;
+    animation: mymoveyoutube 5s infinite;
+    -webkit-animation: mymoveyoutube 5s infinite;
+}
+.benhance{
+    bottom: 160px;
+    left: 60px;
+    animation: mymovebenhance 5s infinite;
+    -webkit-animation: mymovebenhance 5s infinite;
+}
+.git{
+    bottom: 180px;
+    animation: mymovegit 5s infinite;
+    -webkit-animation: mymovegit 5s infinite;
+}
+@keyframes mymovegmail {
+    0% {
+        top: 100px;
+    }
+
+    50% {
+        top: 120px;
+    }
+    100%{
+        top: 100px;
+    }
+}
+@keyframes mymovegit {
+    0% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 160px;
+    }
+
+    100% {
+        bottom: 180px;
+    }
+}
+@keyframes mymovebenhance {
+    0% {
+        bottom: 160px;
+    }
+
+    50% {
+        bottom: 140px;
+    }
+
+    100% {
+        bottom: 160px;
+    }
+}
+@keyframes mymoveyoutube {
+    0% {
+        top: 80px;
+    }
+
+    50% {
+        top: 60px;
+    }
+
+    100% {
+        top: 80px;
+    }
+}
+@keyframes mymovelinkedin {
+    0% {
+        top: 320px;
+    }
+
+    50% {
+        top: 300px;
+    }
+
+    100% {
+        top: 320px;
+    }
+}
+@keyframes mymovecall {
+    0% {
+        top: 260px;
+    }
+
+    50% {
+        top: 250px;
+    }
+
+    100% {
+        top: 260px;
+    }
+}

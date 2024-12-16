@@ -1,0 +1,20 @@
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+      width: 100% !important;
+}
+
+@font-face {
+  font-family: 'PlaywriteDEGrund-Regular';
+  src: url(/src/assets/font/PlaywriteDEGrund-Regular.ttf);
+}
+@font-face {
+  font-family: 'LamaSans-Medium';
+  src: url(/src/assets/font/LamaSans-Medium.ttf);
+}body {
+    background-color: #070a29;
+    background-image: url('./assets/images/648a6bb39e2d83664cf29c45_Bg\ \(1\).png');
+    background-position: 0 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

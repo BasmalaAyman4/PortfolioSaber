@@ -1,0 +1,43 @@
+body {
+    background-color: #070a29;
+}
+.wrapper {
+    height: 100vh;
+    text-align: center;
+}
+
+.wrapper .btn {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.loader {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100vh;
+    transition: width 0s 1.4s ease;
+}
+
+.loader__tile {
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 20%;
+     background:#fff;
+
+ transition: width .7s ease;
+}
+
+.loader__active {
+    width: 100%;
+    transition-delay: 0s;
+}
+
+
+.loader__active .loader__tile {
+    width: 100%;
+}

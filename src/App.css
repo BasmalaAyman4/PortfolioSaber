@@ -1,0 +1,27 @@
+.arabic{
+    font-family: 'LamaSans-Medium' !important;
+
+}
+.english{
+    font-family: 'PlaywriteDEGrund-Regular' !important;
+
+}
+
+body[dir='rtl'] .MuiPaginationItem-previousNext{
+    transform: rotate(180deg) !important;
+    -webkit-transform: rotate(180deg) !important;
+    -moz-transform: rotate(180deg) !important;
+    -ms-transform: rotate(180deg) !important;
+    -o-transform: rotate(180deg) !important;
+}
+.css-exd1zr     {
+    display: none !important;
+}
+body[dir='rtl'] .css-hsi95o-MuiTableRow-root td{
+    text-align: right;
+}
+body[dir='rtl'] .MuiTableCell-head,
+body[dir='rtl'] .MuiTableCell-body{
+    font-family: 'LamaSans-Medium' !important;
+  
+}
