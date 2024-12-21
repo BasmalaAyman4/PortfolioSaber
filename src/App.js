@@ -7,9 +7,11 @@ import Nav from './Layout/Nav'
 import 'react-toastify/dist/ReactToastify.css';
 import cookies from 'js-cookie'
 import Routespage from './Routes';
+import 'aos/dist/aos.css'
+
 function App() {
 
- const currentLanguageCode = cookies.get('i18next') || 'ar'
+  const currentLanguageCode = cookies.get('i18next') || 'en'
  console.log(currentLanguageCode)
  useEffect(() => {
   // Set the direction based on the language code

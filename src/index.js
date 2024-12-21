@@ -13,8 +13,8 @@ i18next
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    supportedLngs: ['ar', 'en'],
-    fallbackLng: "ar",
+    supportedLngs: ['en', 'ar'],
+    fallbackLng: "en",
     detection: {
       order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
       caches: ['cookie']
