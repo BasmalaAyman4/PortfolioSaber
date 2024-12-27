@@ -1,9 +1,9 @@
 .arabic{
-    font-family: 'LamaSans-Medium' !important;
+            font-family: Aclonica, sans-serif !important;
 
 }
 .english{
-    font-family: 'PlaywriteDEGrund-Regular' !important;
+                font-family: Aclonica, sans-serif !important;
 
 }
 
@@ -25,3 +25,4 @@ body[dir='rtl'] .MuiTableCell-body{
     font-family: 'LamaSans-Medium' !important;
   
 }
+

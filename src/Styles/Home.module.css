@@ -302,13 +302,12 @@ max-width: 100%;
 }
 
 .part {
-    border-radius: 24px;
-    border: 1px solid rgba(5, 86, 24, 0.30);
-    border-top: 5px solid #dec7ff;
-    border-bottom: 5px solid #dec7ff;
-    background: #fff;
+
     text-align: center;
     padding: 40px 25px;
+    background-image: linear-gradient(#ffffff1a, #fff0);
+        border-radius: 16px;
+        color: #fff;
 }
 
 .part h3 {
@@ -453,4 +452,380 @@ z-index: 1000;
 .ul__body{
     display: grid;
     grid-template-columns: repeat(2,1fr);
+}
+/*************************************************/
+/*fourth sec*/
+.projec__sec{
+display: flex;
+flex-direction: column;
+margin-top: 150px;
+}
+.speciality {
+    background-color: #ffffff0d;
+    border: 1px solid #ffffff1a;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+    margin-bottom: 20px;
+    padding: 6px 16px;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+.speciality__para {
+    display: inline-block;
+    -webkit-text-fill-color: transparent;
+    background-color: #fff;
+    background-image: linear-gradient(83deg, #5c27fe 26%, #dec7ff 78%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 17px;
+    margin: 0;
+    padding-bottom: 0;
+}
+.speciality__title{
+    color: #fff;
+        text-align: center;
+        flex: none;
+        max-width: 530px;
+        margin-top: 0;
+        margin-bottom: 26px;
+        font-size: 70px;
+        font-weight: 400;
+        line-height: 86.67px;
+        margin:30px  auto;
+}
+.filter__body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.filter__body p {
+    background-color: #ffffff1a;
+    border-radius: 6px;
+    margin: 0 5px;
+    padding: 10px 16px;
+    color: #fff;
+    width: 150px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Add transition for smooth animations */
+}
+
+.filter__body p:hover,
+.filter__body p.active {
+    background-image: linear-gradient(274deg, #dec7ff, #5c27fe);
+    transform: scale(1.1);
+    /* Optional scaling effect for hover/active */
+    box-shadow: 0px 4px 10px rgba(92, 39, 254, 0.4);
+    /* Optional shadow effect */
+}
+.cards__body{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    justify-content: center;
+    align-items: center;
+}
+/****************************************/
+/*card*/
+.card {
+    width: 30rem !important;
+    height: 36rem !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    color: #fff !important;
+    background: #ffffff1a !important;
+    -webkit-border-radius: 20px !important;
+    -moz-border-radius: 20px !important;
+    -ms-border-radius: 20px !important;
+    -o-border-radius: 20px !important;
+}
+
+.card .card__img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity .2s ease-out;
+
+}
+
+.card__logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.card__logo p {
+    margin-bottom: 0 ;
+    padding-bottom: 0 ;
+    font-size: 17px;
+    font-weight: bold;
+}
+.card__para{
+    margin-top: 5px;
+    font-size: 17px;
+        font-weight: bold;
+}
+
+.card__logo .logo__img {
+    width: 100px;
+}
+
+.card__content div {
+    position: absolute;
+    inset: auto auto 30px 30px;
+    margin: 0;
+    transition: inset .3s .3s ease-out;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: normal;
+}
+
+.card__content h5 {
+    font-weight: bold;
+}
+
+.card .learn__more {
+    position: absolute;
+    opacity: 0;
+    max-width: 80%;
+    transition: opacity .3s ease-out;
+}
+
+.card p {
+    inset: auto auto 80px 30px;
+    width: 400px;
+}
+
+.card .learn__more {
+    inset: auto auto 40px 30px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card:hover .card__content div {
+    inset: auto auto 80px 30px;
+    transition: inset .3s ease-out;
+}
+
+.card:hover .learn__more {
+    opacity: 1;
+    transition: opacity .5s .1s ease-in;
+}
+
+.card:hover .card__img {
+    transition: opacity .3s ease-in;
+    opacity: 1;
+}
+
+/* From Uiverse.io by cssbuttons-io */
+.learn__more {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+.learn__more {
+    width: 12rem;
+    height: auto;
+}
+
+.learn__more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 3rem;
+    height: 3rem;
+    background: rgb(43, 31, 110);
+    border-radius: 1.625rem;
+}
+
+.learn__more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+.learn__more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+.learn__more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+.learn__more .button__text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.learn__more:hover .circle {
+    width: 100%;
+}
+
+.learn__more:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+ .button__text {
+    color: #fff;
+}
+.logo__img2{
+    width: 150px;
+}
+/******************************************/
+/*playlist videos*/
+/* From Uiverse.io by gharsh11032000 */
+.playlist__body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 30px;
+        margin: 150px 0;
+}
+.playlists {
+    margin: 0 50px;
+    position: relative;
+    width: fit-content;
+    border-radius: 24px;
+    line-height: 1.6;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+    cursor: pointer;
+}
+
+.playlists__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 22px;
+    color: #ffffff;
+    overflow: hidden;
+    background: #0a3cff;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.playlists__content::before {
+    position: absolute;
+    content: "";
+    top: -4%;
+    left: 50%;
+    width: 90%;
+    height: 90%;
+    transform: translate(-50%);
+    background: #ced8ff;
+    z-index: -1;
+    transform-origin: bottom;
+
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.playlists__content::after {
+    position: absolute;
+    content: "";
+    top: -8%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    transform: translate(-50%);
+    background: #e7ecff;
+    z-index: -2;
+    transform-origin: bottom;
+    border-radius: inherit;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.playlists__content svg {
+    width: 48px;
+    height: 48px;
+}
+
+.playlists__content .para {
+    z-index: 1;
+    opacity: 1;
+    font-size: 18px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.playlists__content .link {
+    z-index: 1;
+    color: #fea000;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 16px;
+    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.playlists__content .link:hover {
+    text-decoration: underline;
+}
+
+.playlists:hover {
+    transform: translate(0px, -16px);
+}
+
+.playlists:hover .playlists__content::before {
+    rotate: -8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.playlists:hover .playlists__content::after {
+    rotate: 8deg;
+    top: 0;
+    width: 100%;
+    height: 100%;
 }

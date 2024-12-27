@@ -18,3 +18,25 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+
+:root {
+  --color-primary-white: rgb(240, 240, 240);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  font-family: 'Roboto', sans-serif;
+  height: 700px;
+}
+
+
+.popular-movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem 2rem;
+}
