@@ -165,22 +165,27 @@ const FourthSec = () => {
                     >
                        
                             <div className={`${styles.playlist__body}`}>
-                             
+                            <a href='https://youtube.com/playlist?list=PLdIyiVt7IcnFORarR2sBfoyN6Gg279ZI2&si=dI0PlnDjWYqRUEbD'>
                                 <div className={`${styles.playlists}`}>
                                     <div className={`${styles.playlists__content}`}>
                                        <img alt='' src={play1}/>
                                     </div>
                                 </div>
+                            </a>
+                            <a href='https://youtube.com/playlist?list=PLdIyiVt7IcnHvWBeBPMLZAf2CF1hPvVQl&si=2Rblunbx6BDUlVIm'>
                                 <div className={`${styles.playlists}`}>
                                     <div className={`${styles.playlists__content}`}>
                                         <img alt='' src={play2} />
                                     </div>
                                 </div>
+                            </a>
+                            <a href='https://youtube.com/playlist?list=PLdIyiVt7IcnEdAtQaOnI3yy9sf1A8cDjm&si=JQzKxQF_Aq1zOhaM'>
                                 <div className={`${styles.playlists}`}>
                                     <div className={`${styles.playlists__content}`}>
                                         <img alt='' src={play3} />
                                     </div>
                                 </div>
+                            </a>
                             </div>
                        
                     </motion.div>

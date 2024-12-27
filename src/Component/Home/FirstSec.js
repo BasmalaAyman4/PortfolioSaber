@@ -60,12 +60,12 @@ const FirstSec = () => {
               }
               {isActiveVisible &&
               <>
-                <img alt='' src={gmail} className={`${styles.gmail}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" />
-              <img alt='' src={call} className={`${styles.call}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" />
-              <img alt='' src={linkedin} className={`${styles.linkedin}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" />
-                <img alt='' src={git} className={`${styles.git}`} data-aos="flip-up" />
-                <img alt='' src={benhance} className={`${styles.benhance}`} data-aos="flip-up" />
-              <img alt='' src={youtube} className={`${styles.youtube}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" />
+                <img alt='' onClick={(e) => { window.location.href = 'mailto:sabersonsabson@gmail.com'; }} src={gmail} className={`${styles.gmail}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" />
+                <a href='tel:1030393815'></a><img alt='' src={call} className={`${styles.call}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" />
+                <a href='https://www.linkedin.com/in/saber-son-b100b4177/'> <img alt='' src={linkedin} className={`${styles.linkedin}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" /></a>
+                <a href='https://github.com/muhamedsaber'><img alt='' src={git} className={`${styles.git}`} data-aos="flip-up" /></a>
+                <a href='https://www.behance.net/mohamedsaber17'><img alt='' src={benhance} className={`${styles.benhance}`} data-aos="flip-up" /></a>
+                <a href='https://www.youtube.com/@saberson1'><img alt='' src={youtube} className={`${styles.youtube}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" /></a>
               </>
               }
               </div>
