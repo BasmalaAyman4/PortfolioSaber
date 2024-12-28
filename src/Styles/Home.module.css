@@ -203,10 +203,12 @@ max-width: 100%;
         font-size: 37px;
     }
     .title__color{
-        font-size: 42px;
+        font-size: 37px;
     }
     .title__line{
-        left: 50px;
+    right: 0;
+    left: 0;
+        width: 60%;
     }
     .para__line{
         margin-top: 100px;
@@ -787,30 +789,6 @@ margin-top: 150px;
     transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.playlists__content svg {
-    width: 48px;
-    height: 48px;
-}
-
-.playlists__content .para {
-    z-index: 1;
-    opacity: 1;
-    font-size: 18px;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.playlists__content .link {
-    z-index: 1;
-    color: #fea000;
-    text-decoration: none;
-    font-family: inherit;
-    font-size: 16px;
-    transition: all 0.48s cubic-bezier(0.23, 1, 0.32, 1);
-}
-
-.playlists__content .link:hover {
-    text-decoration: underline;
-}
 
 .playlists:hover {
     transform: translate(0px, -16px);
@@ -880,7 +858,8 @@ margin-top: 150px;
                  .lines__body{
                     display: none;
                  }
-                 .row{
+                 .row,
+                 .cards__body{
                     display: flex;
                     flex-direction: column;
                  }
@@ -895,4 +874,36 @@ margin-top: 150px;
                                  .skill__four {
                                      margin-top: 10px;
                                  }
+                                 .speciality__title{
+                                    font-size: 32px;
+                                 }
+                                 .filter__body{
+                                    column-gap: 5px;
+                                 }
+.card{
+    width: 22rem !important;
+        height: 30rem !important;
+}
+.card p{
+    width: 100%;
+}
+.playlist__body{
+    display: flex;
+    flex-direction: column;
+    column-gap: 0;
+    row-gap: 100px;
+    width: 100%;
+  
+}
+.playlists{
+
+margin: auto 10px;
+}
+.playlists__content{
+ 
+    gap: 0;
+}
+.playlists__content img{
+    width: 100%;
+}
 }
