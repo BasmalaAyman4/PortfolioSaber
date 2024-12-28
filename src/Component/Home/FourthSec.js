@@ -15,7 +15,7 @@ import play2 from '../../assets/images/play2.jpg'
 import play3 from '../../assets/images/play3.jpg'
 
 const FourthSec = () => {
-    const [select, setSelect] = useState('Projects');
+    const [select, setSelect] = useState('courses');
 
     return (
         <>
@@ -25,8 +25,9 @@ const FourthSec = () => {
                 </div>
                 <h1 className={`${styles.speciality__title}`}>Projects & Tech Tutorials</h1>
                 <div className={`${styles.filter__body}`}>
-                    <p onClick={() => setSelect('Projects')} className={`${select === 'Projects' ? styles.active : ''}`}>Projects</p>
                     <p onClick={() => setSelect('courses')} className={`${select === 'courses' ? styles.active : ''}`}>Courses</p>
+
+                    <p onClick={() => setSelect('Projects')} className={`${select === 'Projects' ? styles.active : ''}`}>Projects</p>
                     <p onClick={() => setSelect('Design')} className={`${select === 'Design' ? styles.active : ''}`}>Design</p>
                 </div>
             </section>
