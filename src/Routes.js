@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter, Routes, Route, useLocation, Router } from 'react-router-dom';
 import cookies from 'js-cookie'
-import Loading from './Global/Loading';
 import Nav from './Layout/Nav'
 import Home from './Pages/Home';
+import FirstSec from './Component/Home/FirstSec';
+import SecondSec from './Component/Home/SecondSec';
+import ThirdSec from './Component/Home/ThirdSec';
+import FourthSec from './Component/Home/FourthSec';
 
 const Routespage = () => {
     const [loading, setLoading] = useState(true); // Controls preloader
@@ -45,9 +48,9 @@ const Routespage = () => {
             (
                     <div className={`app-content ${transitionDone ? "transition-done" : ""}`}>
 <Nav/>
-                        <Routes>
-                            <Route path="/" element={<Home />} />
-                        </Routes>
+                        <FirstSec/>
+                        <SecondSec/>
+                        <FourthSec/>
                         </div>
             )}
           </>

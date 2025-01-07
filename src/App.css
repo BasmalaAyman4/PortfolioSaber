@@ -30,7 +30,7 @@ body[dir='rtl'] .MuiTableCell-body{
  body {
      margin: 0;
      font-family: Arial, sans-serif;
-     overflow: hidden;
+    height: 100%;
  }
 
  .preloader {
@@ -108,8 +108,7 @@ body[dir='rtl'] .MuiTableCell-body{
 
  .app-content {
      position: relative;
-     height: 100vh;
-     overflow: hidden;
+     height:100vh;
      background: transparent;
      animation: red-bg-transition 2s ease-in-out forwards;
      -webkit-animation: red-bg-transition 2s ease-in-out forwards;
@@ -123,6 +122,7 @@ body[dir='rtl'] .MuiTableCell-body{
      background-position: 0 0;
      background-size: cover;
      background-repeat: no-repeat;
+     height: 100%;
  }
 
  @keyframes red-bg-transition {
@@ -171,25 +171,267 @@ body[dir='rtl'] .MuiTableCell-body{
      font-family: Aclonica, sans-serif !important;
 
  }
+html{
+height: 100%;
+}
+/******************************/
+/*****second section*****/
+.section-header .section-title {
+    font-size: 45px;
+    background: #8750f7;
+    background: -webkit-gradient(linear,
+            left top,
+            right top,
+            from(#8750f7),
+            to(#fff));
+    background: -o-linear-gradient(left,
+            #8750f7 0%,
+            #fff 100%);
+    background: linear-gradient(to right,
+            #8750f7 0%,
+           #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.services-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
- body[dir='rtl'] .MuiPaginationItem-previousNext {
-     transform: rotate(180deg) !important;
-     -webkit-transform: rotate(180deg) !important;
-     -moz-transform: rotate(180deg) !important;
-     -ms-transform: rotate(180deg) !important;
-     -o-transform: rotate(180deg) !important;
- }
+.services-section .section-header {
+    margin-left: auto;
+    margin-right: auto;
+}
 
- .css-exd1zr {
-     display: none !important;
- }
+.services-widget>a {
+    color: inherit;
+    text-decoration: none;
+}
 
- body[dir='rtl'] .css-hsi95o-MuiTableRow-root td {
-     text-align: right;
- }
+.services-widget .service-item {
+    border-bottom: 1px solid #2a1454;
+    padding: 0 30px;
+    position: relative;
+    z-index: 2;
+    gap: 20px;
+    display: flex;
+    color:#fff;
+    cursor: pointer;
+}
 
- body[dir='rtl'] .MuiTableCell-head,
- body[dir='rtl'] .MuiTableCell-body {
-     font-family: 'LamaSans-Medium' !important;
+.services-widget .service-item .number {
+    color: #8750f7;
+    font-size: 27px;
+    font-weight: 700 !important;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
 
- }
+.services-widget .service-item.current .number {
+    color: #fff;
+}
+
+.services-widget .service-item.current.mleave .number {
+    color:#8750f7;
+}
+
+.services-widget .service-item:hover .number
+{
+    color: #fff;
+}
+.services-widget .service-item:hover h3{
+    color: #fff;
+}
+.services-widget .service-item:hover .right-box{
+    color: #fff;
+}
+.services-widget .service-item .left-box {
+    width: calc(40% - 10px);
+    padding: 30px 0;
+    gap: 20px;
+}
+
+.services-widget .service-item .left-box .service-title {
+    font-size: 30px;
+    margin-bottom: 0;
+    text-transform: capitalize;
+}
+
+.services-widget .service-item .right-box {
+    width: calc(60% - 10px);
+    padding: 30px 0;
+    padding-right: 15%;
+}
+
+.services-widget .service-item .right-box p:last-child {
+    margin-bottom: 0;
+}
+
+.services-widget .active-bg {
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    position: absolute;
+    z-index: 1;
+    background: #8750f7;
+    background: -o-linear-gradient(190deg,
+            #2a1454 0%,
+            #8750f7 100%);
+    background: linear-gradient(260deg,
+           #2a1454 0%,
+            #8750f7 100%);
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.services-widget i {
+    font-size: 20px;
+    line-height: 1;
+    position: absolute;
+    top: 50%;
+    right: 55px;
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    color: #8750f7;
+}
+
+.services-widget .service-item.current i {
+    -webkit-transform: translateY(-50%) rotate(0deg);
+    -ms-transform: translateY(-50%) rotate(0deg);
+    transform: translateY(-50%) rotate(0deg);
+    color: #fff;
+}
+
+.services-widget .service-item.current.mleave i {
+    -webkit-transform: translateY(-50%) rotate(90deg);
+    -ms-transform: translateY(-50%) rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
+    color: #8750f7;
+}
+
+.services-widget .service-item:hover i {
+    -webkit-transform: translateY(-50%) rotate(0deg);
+    -ms-transform: translateY(-50%) rotate(0deg);
+    transform: translateY(-50%) rotate(0deg);
+    color: #fff;
+}
+
+.services-widget .service-item .service-link {
+    border: none;
+    padding: 0;
+    margin: 0;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.service_details {
+    padding: 0 40px 50px 40px;
+}
+
+.service_details_content .service_info .subtitle {
+    font-size: 16px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #050709;
+    margin-bottom: 10px;
+}
+
+.service_details_content .service_info .title {
+    color: #050709;
+    margin-bottom: 10px;
+}
+
+.service_details_content .service_info .desc {
+    font-size: 16px;
+    color: #0f0715;
+    margin-bottom: 20px;
+}
+
+.service_details_content .service_info .desc p:last-child {
+    margin-bottom: 0;
+}
+
+.service_details_content .service_info ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    columns: 2;
+}
+
+.service_details_content .service_info ul li {
+    display: block;
+    font-size: 16px;
+    color: #0f0715;
+    font-weight: 500;
+    position: relative;
+    z-index: 1;
+    padding-left: 22px;
+    margin-bottom: 5px;
+}
+
+.service_details_content .service_info ul li::before {
+    content: "\f00c";
+    font-weight: 500;
+    color: #8750f7;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+/********* end second section*******/
+@media (min-width:0px) and (max-width:600px) {
+/* services section */
+    .services-widget .service-item {
+        padding: 20px 15px;
+        gap: 15px;
+        transition: all 0.5s ease;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .services-widget .service-item .left-box {
+        width: 100%;
+        gap: 10px;
+        padding: 0 25px 0 0;
+    }
+
+    .services-widget .service-item .left-box .service-title {
+        font-size: 20px;
+    }
+
+    .services-widget .service-item .right-box {
+        width: 100%;
+        padding: 0;
+    }
+
+    .services-widget i {
+        right: 20px;
+        top: 20%;
+        font-size: 15px;
+    }
+
+    .services-widget .active-bg {
+        display: none;
+    }
+
+    .services-widget .service-item.current {
+        background: linear-gradient(260deg,
+                #8750f7 0%,
+                #2a1454 100%);
+    }
+}

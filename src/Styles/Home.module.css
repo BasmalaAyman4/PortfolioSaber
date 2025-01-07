@@ -534,6 +534,8 @@ margin-top: 150px;
     grid-template-columns:repeat(3,1fr);
     justify-content: center;
     align-items: center;
+    margin: 50px 0;
+    gap: 30px;
 }
 /****************************************/
 /*card*/
@@ -735,6 +737,7 @@ margin-top: 150px;
     justify-content: center;
     column-gap: 30px;
         margin: 150px 0;
+        padding-bottom: 150px;
 }
 .playlists {
     margin: 0 50px;
@@ -897,7 +900,7 @@ margin-top: 150px;
 }
 .playlists{
 
-margin: auto 10px;
+margin: auto 30px;
 }
 .playlists__content{
  
@@ -906,4 +909,9 @@ margin: auto 10px;
 .playlists__content img{
     width: 100%;
 }
+.cards__body{
+    margin: 20px 0;
+    row-gap: 20px;
+}
+
 }
