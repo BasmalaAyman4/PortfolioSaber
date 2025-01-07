@@ -6,52 +6,52 @@ import Nav from './Layout/Nav'
 import Home from './Pages/Home';
 
 const Routespage = () => {
-    const currentLanguageCode = cookies.get('i18next') || 'ar'
-    console.log(currentLanguageCode)
-    useEffect(() => {
-        // Set the direction based on the language code
-        document.body.setAttribute('dir', currentLanguageCode === 'ar' ? 'rtl' : 'ltr');
-
-        // Clean up by removing the attribute when the component unmounts or language changes
-        return () => {
-            document.body.removeAttribute('dir');
-        };
-    }, [currentLanguageCode]);
-    const [iLoading, setIsLoading] = useState(true);
-    const location = useLocation();
+    const [loading, setLoading] = useState(true); // Controls preloader
+    const [transitionDone, setTransitionDone] = useState(false); // Controls background animation
 
     useEffect(() => {
         const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 2000); // Duration for the initial load
-
-        return () => clearTimeout(timer);
+            setLoading(false);
+            setTimeout(() => setTransitionDone(true), 2000); // Delay for red background animation
+        }, 3000); // Preloader duration
+        return () => clearTimeout(timer); // Cleanup timeout on unmount
     }, []);
-
-    useEffect(() => {
-        setIsLoading(true); // Start loading when the location changes
-        const timer = setTimeout(() => {
-            setIsLoading(false);
-        }, 2000); // Duration for page transitions
-
-        return () => clearTimeout(timer);
-    }, [location]);
 
 
     return (
-        <div className={currentLanguageCode === 'ar' ? 'arabic' : 'english'} dir={currentLanguageCode === 'ar' ? 'rtl' : 'ltr'}>
-       {/*      {
-                iLoading ?
-                    <Loading iLoading={iLoading} location={location}/>
-                    :
-                    <> */}
-                    <Nav/>
+   <>
+            {loading ? (
+        <div className="preloader">
+          <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
+            <path
+              id="preloaderSvg"
+              d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"
+            ></path>
+          </svg>
+          <div className="preloader-heading">
+            <div className="load-text">
+              <span>L</span>
+              <span>o</span>
+              <span>a</span>
+              <span>d</span>
+              <span>i</span>
+              <span>n</span>
+              <span>g</span>
+            </div>
+          </div>
+        </div>
+            )
+            :
+            (
+                    <div className={`app-content ${transitionDone ? "transition-done" : ""}`}>
+<Nav/>
                         <Routes>
                             <Route path="/" element={<Home />} />
                         </Routes>
-            {/*         </>
-            } */}
-        </div>
+                        </div>
+            )}
+          </>
+       
     );
 };
 

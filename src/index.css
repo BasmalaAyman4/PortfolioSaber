@@ -11,14 +11,7 @@ body {
 @font-face {
   font-family: 'LamaSans-Medium';
   src: url(/src/assets/font/LamaSans-Medium.ttf);
-}body {
-    background-color: #070a29;
-    background-image: url('./assets/images/648a6bb39e2d83664cf29c45_Bg\ \(1\).png');
-    background-position: 0 0;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-
 
 :root {
   --color-primary-white: rgb(240, 240, 240);
