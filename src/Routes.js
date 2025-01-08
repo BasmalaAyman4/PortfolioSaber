@@ -50,6 +50,7 @@ const Routespage = () => {
 <Nav/>
                         <FirstSec/>
                         <SecondSec/>
+                        <ThirdSec/>
                         <FourthSec/>
                         </div>
             )}

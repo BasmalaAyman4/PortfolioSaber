@@ -3,7 +3,15 @@ import styles from '../../Styles/Home.module.css'
 import Aos from 'aos'
 import { Container } from 'react-bootstrap'
 const ThirdSec = () => {
+    useEffect(() => {
+        Aos.init({
+            once: true, // Animations will trigger only once
+            duration: 800, // Set default animation duration
+            easing: 'ease-in-sine', // Default easing
+        });
+    }, []);
     return (
+
         <>
             <section className={`${styles.ThirdSec}`}>
                 <Container>

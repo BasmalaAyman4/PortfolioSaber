@@ -913,5 +913,8 @@ margin: auto 30px;
     margin: 20px 0;
     row-gap: 20px;
 }
-
+.line__right,
+.line__left{
+    display: none;
+}
 }
