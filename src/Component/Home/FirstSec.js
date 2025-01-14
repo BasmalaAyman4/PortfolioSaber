@@ -14,24 +14,17 @@ import benhance from '../../assets/images/behance (1).png'
 import Aos from 'aos'
 const FirstSec = () => {
     const currentLanguageCode = cookies.get('i18next') || 'ar'
-  const [isVisible, setVisible] = useState(false);
   const [isMobVisible, setMobVisible] = useState(false);
-  const [isFlibVisible, setFlibVisible] = useState(false);
   const [isActiveVisible, setActiveVisible] = useState(false)
   useEffect(() => {
     Aos.init();
-    setTimeout(() => {
-      setVisible(true);
-    }, 500);
+   
     setTimeout(() => {
       setMobVisible(true);
-    }, 1000);
-    setTimeout(() => {
-      setFlibVisible(true);
-    }, 2500);
+    }, 800);
     setTimeout(() => {
       setActiveVisible(true);
-    }, 2000);
+    }, 1000);
   }, [])
 
   return (
@@ -40,7 +33,7 @@ const FirstSec = () => {
         <Row className={`${styles.first__sec__row}`}>
 
   <Col>
-            <div className={`${styles.title__body}`} data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1300">
+            <div className={`${styles.title__body}`} data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500">
 
  
                 <h1 className={`${styles.title}`}>Hello! I’m Mohamed Saber</h1>
@@ -56,16 +49,16 @@ const FirstSec = () => {
   <div className={`${styles.user__body}`}>
                       <img alt='' src={back} className={`${styles.back}`} />
               {isMobVisible &&
-              <img alt='' src={user} className={`${styles.user}`} data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1300" />
+              <img alt='' src={user} className={`${styles.user}`} data-aos="fade-down" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="500" />
               }
               {isActiveVisible &&
               <>
-                <img alt='' onClick={(e) => { window.location.href = 'mailto:sabersonsabson@gmail.com'; }} src={gmail} className={`${styles.gmail}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" />
-                <a href='tel:1030393815'></a><img alt='' src={call} className={`${styles.call}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" />
-                <a href='https://www.linkedin.com/in/saber-son-b100b4177/'> <img alt='' src={linkedin} className={`${styles.linkedin}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" /></a>
+                <img alt='' onClick={(e) => { window.location.href = 'mailto:sabersonsabson@gmail.com'; }} src={gmail} className={`${styles.gmail}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700" />
+                <a href='tel:1030393815'></a><img alt='' src={call} className={`${styles.call}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700" />
+                <a href='https://www.linkedin.com/in/saber-son-b100b4177/'> <img alt='' src={linkedin} className={`${styles.linkedin}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700" /></a>
                 <a href='https://github.com/muhamedsaber'><img alt='' src={git} className={`${styles.git}`} data-aos="flip-up" /></a>
                 <a href='https://www.behance.net/mohamedsaber17'><img alt='' src={benhance} className={`${styles.benhance}`} data-aos="flip-up" /></a>
-                <a href='https://www.youtube.com/@saberson1'><img alt='' src={youtube} className={`${styles.youtube}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="1000" /></a>
+                <a href='https://www.youtube.com/@saberson1'><img alt='' src={youtube} className={`${styles.youtube}`} data-aos="flip-up" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="700" /></a>
               </>
               }
               </div>

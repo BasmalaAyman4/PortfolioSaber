@@ -28,7 +28,6 @@ const FourthSec = () => {
                     <p onClick={() => setSelect('courses')} className={`${select === 'courses' ? styles.active : ''}`}>Courses</p>
 
                     <p onClick={() => setSelect('Projects')} className={`${select === 'Projects' ? styles.active : ''}`}>Projects</p>
-                    <p onClick={() => setSelect('Design')} className={`${select === 'Design' ? styles.active : ''}`}>Design</p>
                 </div>
             </section>
 

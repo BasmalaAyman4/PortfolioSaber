@@ -23,7 +23,7 @@ const Routespage = () => {
 
     return (
    <>
-            {loading ? (
+       {/*      {loading ? (
         <div className="preloader">
           <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
             <path
@@ -46,14 +46,14 @@ const Routespage = () => {
             )
             :
             (
-                    <div className={`app-content ${transitionDone ? "transition-done" : ""}`}>
+                    <div className={`app-content ${transitionDone ? "transition-done" : ""}`}> */}
 <Nav/>
                         <FirstSec/>
                         <SecondSec/>
                         <ThirdSec/>
                         <FourthSec/>
-                        </div>
-            )}
+             {/*            </div>
+            )} */}
           </>
        
     );
