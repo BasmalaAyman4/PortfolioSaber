@@ -39,7 +39,7 @@ const ThirdSec = () => {
                         </div>
                     </div>
                     <div className={`${styles.row}`} >
-                        <div className={`${styles.col} ${styles.skill__one}`} data-aos="zoom-out" data-aos-easing="ease-in-sine" data-aos-duration="1200" >
+                        <div className={`${styles.col} ${styles.skill__one}`} data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="1200" >
                             <hr className={`${styles.line__left}`} />
                             <div>
                                 <h2>Programming Languages</h2>
@@ -71,7 +71,7 @@ const ThirdSec = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className={`${styles.col} ${styles.skill__three}`} data-aos="zoom-out" data-aos-easing="ease-in-sine" data-aos-duration="1200">
+                        <div className={`${styles.col} ${styles.skill__three}`} data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="1200">
                             <hr className={`${styles.line__left}`} />
                             <div>
                                 <h2>Development Practices </h2>
@@ -105,7 +105,7 @@ const ThirdSec = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className={`${styles.col} ${styles.skill__five}`} data-aos="zoom-out" data-aos-easing="ease-in-sine" data-aos-duration="1200">
+                        <div className={`${styles.col} ${styles.skill__five}`} data-aos="zoom-in" data-aos-easing="ease-in-sine" data-aos-duration="1200">
                             <hr className={`${styles.line__left}`} />
                             <div>
                                 <h2>Tools  </h2>
