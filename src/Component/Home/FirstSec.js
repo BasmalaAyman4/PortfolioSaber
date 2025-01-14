@@ -3,7 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap';
 import styles from '../../Styles/Home.module.css'
 import cookies from 'js-cookie'
 import line from '../../assets/images/line.png'
-import user from '../../assets/images/user.jpg'
+import user from '../../assets/images/photo_5780547031889201456_y.jpg'
 import back from '../../assets/images/back.png'
 import gmail from '../../assets/images/gmail.png'
 import call from '../../assets/images/mobile.png'
